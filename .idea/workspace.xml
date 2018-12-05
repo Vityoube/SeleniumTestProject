@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eff495c9-2a95-490e-a1af-00f9f52cf3e2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/selenium/framework/tests/AbstractTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/selenium/framework/tests/AddEnvironmentTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/selenium/framework/Pages/AddEnvironmentPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/selenium/framework/Pages/EnvironmentPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/selenium/framework/Pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/selenium/framework/Pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/selenium/framework/tests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/selenium/framework/tests/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/selenium/framework/Pages/DashboardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/selenium/framework/Pages/DashboardPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/selenium/framework/tests/AddEnvironmentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/selenium/framework/tests/AddEnvironmentTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -30,25 +29,27 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2284" />
+          <entry key="java" value="3193" />
+          <entry key="txt" value="34" />
           <entry key="xml" value="96" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2284" />
+          <entry key="JAVA" value="3193" />
+          <entry key="PLAIN_TEXT" value="34" />
           <entry key="XML" value="96" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="11" />
+          <entry key="java" value="13" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="11" />
+          <entry key="JAVA" value="13" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
@@ -56,15 +57,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/selenium/framework/tests/LoginTest.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -80,8 +72,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/selenium/framework/tests/AddEnvironmentTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+            <state relative-caret-position="187">
+              <caret line="11" column="45" lean-forward="true" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -132,21 +127,42 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/selenium/framework/Utils/FileUtils.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/selenium/framework/Pages/DashboardPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="5" column="46" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
+            <state relative-caret-position="357">
+              <caret line="25" column="43" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/selenium/framework/Pages/DashboardPage.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/selenium/framework/Pages/EnvironmentPage.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
-              <caret line="17" column="48" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
+              <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#171#172#0" expanded="true" />
+                <element signature="e#200#201#0" expanded="true" />
+                <element signature="e#639#640#0" expanded="true" />
+                <element signature="e#660#661#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/selenium/framework/Pages/AddEnvironmentPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="28" column="43" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#177#178#0" expanded="true" />
+                <element signature="e#206#207#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -190,12 +206,14 @@
         <option value="$PROJECT_DIR$/src/main/java/FirstSeleniumClass.java" />
         <option value="$PROJECT_DIR$/src/main/java/selenium/framework/FirstSeleniumClass.java" />
         <option value="$PROJECT_DIR$/src/main/java/selenium/framework/Pages/AbstractPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/selenium/framework/Pages/DashboardPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/selenium/framework/Utils/BaseProperties.java" />
         <option value="$PROJECT_DIR$/src/main/java/selenium/framework/Utils/FileUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/selenium/framework/tests/LoginTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/selenium/framework/Pages/LoginPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/selenium/framework/tests/AbstractTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/selenium/framework/Pages/DashboardPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/selenium/framework/Pages/AddEnvironmentPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/selenium/framework/Pages/EnvironmentPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/selenium/framework/tests/AddEnvironmentTest.java" />
       </list>
     </option>
@@ -294,20 +312,20 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543998574249" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544000578661" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\PROJECTS\SeleniumTestProject\drivers" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="selenium.framework.Pages" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="selenium.framework.Pages" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\PROJECTS\SeleniumTestProject\drivers" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -397,6 +415,14 @@
       <option name="presentableId" value="Default" />
       <updated>1543916501155</updated>
     </task>
+    <task id="LOCAL-00001" summary="Added environment test prototype">
+      <created>1543998627237</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1543998627238</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -466,6 +492,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added environment test prototype" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added environment test prototype" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/SecondClass.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/FirstClass.java" />
@@ -484,20 +514,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/selenium/framework/Pages/DashboardPage.java">
+    <entry file="file://$PROJECT_DIR$/src/main/testRun.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="17" column="48" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
+        <state relative-caret-position="85">
+          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/selenium/framework/tests/LoginTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="67" lean-forward="true" selection-start-line="19" selection-start-column="67" selection-end-line="19" selection-end-column="67" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/testRun.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/selenium/framework/Pages/AddEnvironmentPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+        <state relative-caret-position="476">
+          <caret line="28" column="43" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#177#178#0" expanded="true" />
+            <element signature="e#206#207#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/selenium/framework/Pages/EnvironmentPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#171#172#0" expanded="true" />
+            <element signature="e#200#201#0" expanded="true" />
+            <element signature="e#639#640#0" expanded="true" />
+            <element signature="e#660#661#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/selenium/framework/Pages/DashboardPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="25" column="43" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -511,13 +577,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/selenium/framework/Utils/BaseProperties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="56" lean-forward="true" selection-start-line="6" selection-start-column="56" selection-end-line="6" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/selenium/framework/Pages/LoginPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -528,13 +587,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/selenium/framework/tests/LoginTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/selenium/framework/Utils/BaseProperties.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="67" lean-forward="true" selection-start-line="19" selection-start-column="67" selection-end-line="19" selection-end-column="67" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="102">
+          <caret line="6" column="56" lean-forward="true" selection-start-line="6" selection-start-column="56" selection-end-line="6" selection-end-column="56" />
         </state>
       </provider>
     </entry>
@@ -550,8 +606,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/selenium/framework/tests/AddEnvironmentTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+        <state relative-caret-position="187">
+          <caret line="11" column="45" lean-forward="true" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
