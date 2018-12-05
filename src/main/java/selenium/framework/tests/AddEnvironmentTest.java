@@ -4,7 +4,9 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import selenium.framework.Pages.AddEnvironmentPage;
 import selenium.framework.Pages.DashboardPage;
-import selenium.framework.Pages.EnvironmentPage;
+import selenium.framework.Pages.EnvironmentsPage;
+
+import java.util.Date;
 
 public class AddEnvironmentTest extends AbstractTest {
 
@@ -12,18 +14,19 @@ public class AddEnvironmentTest extends AbstractTest {
     public void successAddEnvironmentTest() {
         // wejscie do srodowiska
         DashboardPage dashboardPage = new DashboardPage(driver);
-        EnvironmentPage environmentPage = dashboardPage.goToEnvironmentPage();
+        EnvironmentsPage environmentsPage = dashboardPage.goToEnvironmentsPage();
 
         // wejscie do dodania srodowiska
-        AddEnvironmentPage addEnvironmentPage = environmentPage.goToAddEnvironmentPage();
+        AddEnvironmentPage addEnvironmentPage = environmentsPage.goToAddEnvironmentPage();
 
 
 
         //uzupelnienie formularza
         // wyslanie formularza
-        environmentPage = addEnvironmentPage.fillAddEnvironmentForm("nazwa", "opis").submitAddEnvironmentForm();
+        environmentsPage = addEnvironmentPage.fillAddEnvironmentForm("Environment_"+new Date().getTime(),
+                "opis").submitAddEnvironmentForm();
         // sprawdzenie czy udalo sie dodac
-        Assert.assertTrue(environmentPage.isInfoBoxDisplayed());
+        Assert.assertTrue(environmentsPage.isInfoBoxDisplayed());
 
     }
 

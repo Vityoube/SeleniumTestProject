@@ -10,7 +10,7 @@ import selenium.framework.Utils.FileUtils;
 import java.util.concurrent.TimeUnit;
 
 public abstract class AbstractTest {
-    protected WebDriver driver;
+    protected static WebDriver driver;
     protected FileUtils fileUtils;
 
     @BeforeTest

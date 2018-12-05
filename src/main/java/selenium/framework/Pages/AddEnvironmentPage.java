@@ -24,8 +24,8 @@ public class AddEnvironmentPage extends AbstractPage {
         return this;
     }
 
-    public EnvironmentPage submitAddEnvironmentForm(){
+    public EnvironmentsPage submitAddEnvironmentForm(){
         clickElement(saveButton);
-        return new EnvironmentPage(driver);
+        return new EnvironmentsPage(driver);
     }
 }
