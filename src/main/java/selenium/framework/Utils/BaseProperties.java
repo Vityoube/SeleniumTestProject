@@ -8,5 +8,8 @@ public class BaseProperties {
 
     public static String chromeDriver="chromedriver.exe";
     public static String driverPath="drivers/";
+    public static String screenshotPath="screenshots/";
+
+    public static String[] statusName={"OK","Error","Skip"};
 
 }

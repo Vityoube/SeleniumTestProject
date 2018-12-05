@@ -11,6 +11,8 @@ public class AddEnvironmentPage extends AbstractPage {
     private WebElement descriptionField;
     @FindBy(id="save")
     private WebElement saveButton;
+    @FindBy(css="#j_info_box > div")
+    private WebElement infoBoxIcon;
 
     public AddEnvironmentPage(WebDriver driver) {
         super(driver);
@@ -27,5 +29,8 @@ public class AddEnvironmentPage extends AbstractPage {
     public EnvironmentsPage submitAddEnvironmentForm(){
         clickElement(saveButton);
         return new EnvironmentsPage(driver);
+    }
+    public boolean isInfoBoxStatusSuccess(){
+        return isAttributeValueMatch(infoBoxIcon,"class","icon_info");
     }
 }

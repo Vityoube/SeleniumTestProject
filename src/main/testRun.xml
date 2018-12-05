@@ -2,10 +2,12 @@
         "http://testng.org/testng-1.0.dtd" >
 
 <suite name="Suite1">
+    <parameter name="makeScreenshot" value="always"/>
     <test name="Test1">
         <classes>
             <class name="selenium.framework.tests.LoginTest"/>
             <class name="selenium.framework.tests.AddEnvironmentTest"/>
+            <class name="selenium.framework.tests.AddVersionTest"/>
         </classes>
     </test>
 </suite>

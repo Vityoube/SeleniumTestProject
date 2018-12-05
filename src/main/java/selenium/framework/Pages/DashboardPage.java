@@ -10,6 +10,8 @@ public class DashboardPage extends AbstractPage{
 
     @FindBy(css = "#wrapper > ul > li:nth-child(4) > a")
     private WebElement environmentsButton;
+    @FindBy(css="#wrapper > ul > li:nth-child(5) > a")
+    private WebElement versionButton;
 
     public DashboardPage(WebDriver driver) {
         super(driver);
@@ -22,6 +24,10 @@ public class DashboardPage extends AbstractPage{
     public EnvironmentsPage goToEnvironmentsPage(){
         clickElement(environmentsButton);
         return new EnvironmentsPage(driver);
+    }
 
+    public VersionsPage goToVersionsPage(){
+        clickElement(versionButton);
+        return new VersionsPage(driver);
     }
 }

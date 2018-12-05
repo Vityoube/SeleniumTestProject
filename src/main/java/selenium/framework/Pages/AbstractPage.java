@@ -24,4 +24,8 @@ public abstract class AbstractPage {
     protected  boolean isElementDisplayed(WebElement element){
         return  element.isDisplayed();
     }
+
+    public boolean isAttributeValueMatch(WebElement element, String attribute, String expectedValue){
+        return element.getAttribute(attribute).equalsIgnoreCase(expectedValue);
+    }
 }

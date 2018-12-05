@@ -1,6 +1,7 @@
 package selenium.framework.tests;
 
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
 import selenium.framework.Pages.AddEnvironmentPage;
 import selenium.framework.Pages.DashboardPage;
@@ -20,14 +21,20 @@ public class AddEnvironmentTest extends AbstractTest {
         AddEnvironmentPage addEnvironmentPage = environmentsPage.goToAddEnvironmentPage();
 
 
-
         //uzupelnienie formularza
         // wyslanie formularza
-        environmentsPage = addEnvironmentPage.fillAddEnvironmentForm("Environment_"+new Date().getTime(),
+        environmentsPage = addEnvironmentPage.fillAddEnvironmentForm("Environment_" + new Date().getTime(),
                 "opis").submitAddEnvironmentForm();
         // sprawdzenie czy udalo sie dodac
         Assert.assertTrue(environmentsPage.isInfoBoxDisplayed());
+        Assert.assertTrue(environmentsPage.isInfoBoxStatusSuccess());
 
+    }
+
+    @AfterClass
+    public void tearDownEnvironments() {
+        EnvironmentsPage environmentsPage = new EnvironmentsPage(driver);
+        environmentsPage.goToDashboardPage();
     }
 
 }
