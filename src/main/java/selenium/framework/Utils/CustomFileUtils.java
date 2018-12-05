@@ -13,7 +13,7 @@ public class CustomFileUtils {
 
     public void deleteProjectDirectory(String path){
         try {
-            FileUtils.deleteDirectory(new File(getProjectPath()+path));
+            FileUtils.deleteDirectory(new File(getProjectPath()+"/"+path));
         } catch (IOException e) {
             e.printStackTrace();
         }

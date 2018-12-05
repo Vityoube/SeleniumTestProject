@@ -20,7 +20,8 @@ public abstract class AbstractTest {
     protected static CustomScreenshot customScreenshot;
 
     @BeforeTest
-    public void setUpTest() {
+    @Parameters({"deleteScreenshots"})
+    public void setUpTest(String deleteScreenshots) {
         customFileUtils = new CustomFileUtils();
         customScreenshot=new CustomScreenshot();
         System.setProperty("webdriver.chrome.driver", customFileUtils.getProjectPath() + "/" + BaseProperties.driverPath + BaseProperties.chromeDriver);
@@ -29,6 +30,8 @@ public abstract class AbstractTest {
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
         driver.get(BaseProperties.baseUrl);
+        if("true".equals(deleteScreenshots))
+            customFileUtils.deleteProjectDirectory(BaseProperties.screenshotPath);
     }
 
     @AfterMethod
